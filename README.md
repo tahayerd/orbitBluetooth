@@ -174,6 +174,7 @@ Bind them in your compositor, for example in niri: `Mod+N { spawn "dms" "ipc" "c
 | Problem | Solution |
 | --- | --- |
 | Nothing changed after installing | Add one of its widgets, see [Add a widget](#3-add-a-widget) |
+| After an update, Orbit's volume pop-up is gone and DMS's OSD is back (or another part of Orbit stops working) | Restart DMS once (`dms restart`, or log out and back in): a running shell does not see files an update adds, so Orbit's background service cannot start until then |
 | Earbuds disconnect after a few seconds | Accept the pairing code dialog once |
 | No pop-up for new headphones | It appears when any tool searches for devices (Orbit's **Scan**, your system settings); turn on **Background scan** to have Orbit search by itself; the pop-up waits for full-screen windows |
 | Something did not work | A short note says why, and the GitHub mark next to it opens the matching section of the guide |

@@ -3,6 +3,12 @@
 All notable changes to Orbit Bluetooth are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and versions follow [Semantic Versioning](https://semver.org/).
 
+## Unreleased
+
+### Documentation
+
+- Troubleshooting: after an update that adds files (1.13.3 added `OrbitIpc.qml` and `PairingFlow.qml`), restart DMS once. Qt keeps the list of a folder's QML files for as long as the shell runs, so the new files are not found, Orbit's daemon does not start, and DMS's own volume OSD shows instead of Orbit's pop-up.
+
 ## 1.13.3 - 2026-10-04
 
 ### Changed
